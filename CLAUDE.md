@@ -13,10 +13,10 @@ Pure static HTML/CSS/JS — no build step, no framework. Google Fonts (Inter) lo
 ## Structure
 
 ```
-index.html       — landing page
-support.html     — support page (mailto: contact@swellsolutionstech.com)
-css/style.css    — shared stylesheet (CSS custom properties, responsive)
-assets/          — place logo.png / images here if needed
+index.html          — landing page
+support/index.html  — support page served at /support (mailto: contact@swellsolutionstech.com)
+css/style.css       — shared stylesheet (CSS custom properties, responsive)
+assets/             — place logo.png / images here if needed
 ```
 
 ## Dev Server
