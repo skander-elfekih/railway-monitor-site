@@ -760,18 +760,6 @@ section { padding: 100px 0; }
   margin-bottom: 28px;
 }
 
-.contact-email-link {
-  display: block;
-  color: var(--teal);
-  font-size: 14px;
-  text-decoration: none;
-  font-weight: 600;
-  margin-bottom: 28px;
-  word-break: break-all;
-  transition: opacity 0.2s;
-}
-
-.contact-email-link:hover { opacity: 0.75; }
 
 .faq-card h2 {
   font-size: 22px;

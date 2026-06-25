@@ -78,10 +78,7 @@
           <p>
             Send us an email and we'll respond within 24–48 hours. Please include your Stream Deck model and a description of the issue.
           </p>
-          <a class="contact-email-link" href="mailto:contact@swellsolutionstech.com">
-            contact@swellsolutionstech.com
-          </a>
-          <a class="btn-gradient" href="mailto:contact@swellsolutionstech.com?subject=Railway%20Monitor%20Support&body=Hello%2C%0A%0AStream%20Deck%20model%3A%20%0A%0AIssue%20description%3A%0A">
+          <a class="btn-gradient" id="contactBtn" href="#">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
               <polyline points="22,6 12,13 2,6"/>
@@ -159,7 +156,7 @@
         <p class="footer-copy">© 2025 Swell Solutions Tech. All rights reserved.</p>
         <div class="footer-links">
           <a href="/support">Support</a>
-          <a href="mailto:contact@swellsolutionstech.com">Contact</a>
+          <a href="#" id="contactFooter">Contact</a>
         </div>
       </div>
     </div>
@@ -170,6 +167,15 @@
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 20);
     });
+
+    (function () {
+      const u = 'contact';
+      const d = 'swellsolutionstech' + '.' + 'com';
+      const base = 'mailto:' + u + '\x40' + d;
+      const full = base + '?subject=Railway%20Monitor%20Support&body=Hello%2C%0A%0AStream%20Deck%20model%3A%20%0A%0AIssue%20description%3A%0A';
+      document.getElementById('contactBtn').href = full;
+      document.getElementById('contactFooter').href = base;
+    })();
   </script>
 </body>
 </html>
